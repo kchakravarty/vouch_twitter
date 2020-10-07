@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} User Information{% endblock %}
+{% block content %}
+
+<header>
+<body>
+
+{% block info %}
+  <img src="{{user.profile_image_url}}">
+  <h4>Screen Name:</h4> <p>{{user.screen_name}}</p>
+  <h4>Name:</h4> <p> {{user.name}}</p>
+  <h4> Created at:</h4><p> {{user.created_at}}</p>
+  <h4>location:</h4><p> {{user.location}}</p>
+  <h4>followers:</h4><p>{{user.followers_count}}</p>
+  <h4>friends:</h4><p>{{user.friends_count}}</p>
+  <h4>statuses:</h4><p> {{user.statuses_count}}</p>
+
+{% endblock %}
+</body>
+</header>
+
+{% endblock %}

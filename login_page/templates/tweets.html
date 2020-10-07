@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Your Timeline{% endblock %}
+{% block content %}
+
+<div class="row">
+  <body>
+      {% for status in statuses %}
+      {% if status.entities.urls %}
+      <br>
+        <p>Text: {{ status.full_text }}</p>
+        {% for t in status.entities.urls %}
+         <p>Link: {{ t.expanded_url }}</p>
+         {% endfor %}
+         <h1>----------------</h1>
+         {% endif %}
+      {% endfor %}
+    </body>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} Hey there, Welcome! {% endblock %}
+{% block content %}
+<div>
+  <h3> What would you like to do? </h3>
+    <div class="col-md-8 mx-auto social-container my-2 order-md-1">
+        <button class="btn btn-primary">
+          <a href="info">Display user information</a>
+        </button>
+        <br>
+        <button class="btn btn-danger">
+          <a href="tweets"> Tweets with links </a>
+          </button>
+        <br>
+        <button class="btn btn-warning">
+          <a href="domain"> Domains and users </a>
+        </button>
+    </div>
+</div>
+{% endblock %}

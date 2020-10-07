@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} Domains and Users{% endblock %}
+{% block content %}
+<div>
+  <h5> Here's the list of domains used: </h5>
+  {% for d in domains %}
+  {{d}}<br>
+  {% endfor %}
+  <br>
+  <h5> Here's the list of users: </h5>
+  {% for u in users %}
+  {{u}}<br>
+  {% endfor %}
+  <br>
+  <h5> Most Frequently used domain: </h5> <p> {{freq_domain}}</p>
+  <br><br>
+  <h5> Most Frequent user: </h5> <p> {{freq_user}}</p>
+
+  </div>
+
+
+{% endblock %}
