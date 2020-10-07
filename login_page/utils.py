@@ -1,6 +1,6 @@
 import tweepy
-consumer_key = '4G3XqQVWviqdhkkv678mqNgMN'
-consumer_secret= 'GWwgeu6nO0B8EJT4Ly9NNroq3udu0h4mRiPQJZqSRU8dJss6Sh'
+consumer_key = 'Enter you consumer key'
+consumer_secret= 'Enter yout consumer secret key'
 
 
 def set_up(request):
